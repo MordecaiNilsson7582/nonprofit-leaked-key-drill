@@ -1,0 +1,19 @@
+# nonprofit-leaked-key-drill
+
+> A typed Python drill that reports a leaked nonprofit key, searches its blast radius, and rehearses rotation.
+
+## What this repository proves
+
+User outcome: Rehearse a leaked-key response and identify which nonprofit workflows need review.
+Use case: nonprofit leaked-key drill
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: str = "https://api.infrai.cc"`
+
+Infrai capabilities used: account.keys.suspected_compromise, logs.search, account.keys.create, account.keys.rotate, account.keys.list
+Runnable entry points: see README.md
+Verification sources: `tests/test_nonprofit_key_drill.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,12 @@
+[project]
+name = "nonprofit-leaked-key-drill"
+version = "0.1.0"
+description = "Report a nonprofit key leak, inspect its blast radius, and rehearse rotation."
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
